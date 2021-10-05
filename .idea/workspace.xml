@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2921356e-57b0-400d-b07e-e6bb6a4152d5" name="Changes" comment="" />
+    <list default="true" id="2921356e-57b0-400d-b07e-e6bb6a4152d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_10_05_092500_artists.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_10_05_092500_playlists.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/artist.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArtistController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArtistController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SongController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SongController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/song.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/song.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,10 +150,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -161,11 +175,45 @@
       <option name="presentableId" value="Default" />
       <updated>1632208737091</updated>
       <workItem from="1632208741996" duration="1683000" />
-      <workItem from="1632217339891" duration="9404000" />
+      <workItem from="1632217339891" duration="9651000" />
+      <workItem from="1632726382635" duration="264000" />
+      <workItem from="1633332474300" duration="798000" />
+      <workItem from="1633333391669" duration="1621000" />
+      <workItem from="1633417275393" duration="2086000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="212943e4-f19e-4c68-9abc-a61a90e6b99c">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="b949d8d3-140d-4cab-a8b3-e59f90684641">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="212943e4-f19e-4c68-9abc-a61a90e6b99c" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
