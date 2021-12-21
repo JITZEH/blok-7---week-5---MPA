@@ -9,7 +9,6 @@ class Playlists extends Migration
     /**
      * Run the migrations.
      *
-     * @param Blueprint $table
      * @return void
      */
     public function up()
@@ -17,7 +16,6 @@ class Playlists extends Migration
         Schema::create('playlists', function (Blueprint $table) {
             $table->id();
             $table->string("title");
-            $table->text("description");
         });
 
     }

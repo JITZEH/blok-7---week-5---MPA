@@ -17,10 +17,11 @@ class Songs extends Migration
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->text("description");
-            $table->time("duration");
+            $table->integer("duration");
             $table->string("artist");
-            $table->string("album");
+            $table->integer("genre_id");
+
+
         });
 
     }
