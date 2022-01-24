@@ -17,8 +17,14 @@ class QueueController extends Controller {
    public function index() {
         $queue = new Queue();
         $queuelist = $queue->getQueue();
-        $queuelistDuration = $queue->getQueuePlayTime();
-        return view('queue', compact('queuelist', 'queuelistDuration'));
+        $queuelistTime = 0;
+        foreach ($queuelist as $song) {
+           $queuelistTime = $queuelistTime + $song->duration;
+        }
+        $seconds = $queuelistTime;
+        $queuelistDuration = sprintf('%02d:%02d:%02d', ($seconds / 3600), ($seconds / 60 % 60), $seconds % 60);
+
+       return view('queue', compact('queuelist', 'queuelistDuration'));
    }
 
     public function push(Song $song) {
@@ -42,12 +48,14 @@ class QueueController extends Controller {
         $queue->storePlaylist($queuelist);
         $queuelistDuration = '00:00:00';
         $queuelist = []; // moet nog weg
-        return redirect('/queue');
+        return redirect('/playlists');
     }
     public function createPlaylist() {
         $queue = new Queue();
         $queuelist = $queue->getQueue();
-        return redirect('/queue');
+        $queuelistDuration = '00:00:00';
+//        return redirect('/queue');
+        return view('createplaylist', compact('queuelist', 'queuelistDuration'));
    }
 }
 

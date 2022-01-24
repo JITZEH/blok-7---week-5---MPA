@@ -33,26 +33,6 @@ class Queue
         return ($queuelist);
     }
 
-    /**
-     * Returns total duration of all songs in the queue.
-     * @return string $queuelistTimeInTimeFormat
-     */
-    public function getQueuePlayTime()
-    {
-        $queuelistTime = 0;
-        $queuelist = Session::get('playlist');
-        if ($queuelist == null) {
-            $queuelist = [];
-        }
-
-        foreach ($queuelist as $song) {
-            $queuelistTime = $queuelistTime + $song->duration;
-        }
-        $seconds = $queuelistTime;
-        $queuelistTimeInTimeFormat = sprintf('%02d:%02d:%02d', ($seconds / 3600), ($seconds / 60 % 60), $seconds % 60);
-
-        return ($queuelistTimeInTimeFormat);
-    }
 
     /**
      * Returns a empty queuelist
@@ -82,12 +62,10 @@ class Queue
         return ($queuelist);
     }
 
-    public function createPlaylist()
-    {
+    public function createPlaylist(){
     }
 
-    public function storePlaylist($queuelist)
-    {
+    public function storePlaylist($queuelist){
         $songIds = collect();
         foreach ($queuelist as $song) {
             $songIds->push($song->id);
@@ -96,5 +74,6 @@ class Queue
             'title' => $_GET['title']
         ]);
         $playlist->songs()->syncWithoutDetaching($songIds);
+        Session::flush();
     }
 }

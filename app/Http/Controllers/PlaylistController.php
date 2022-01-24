@@ -15,10 +15,8 @@ class PlaylistController extends Controller
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response
      */
     public function index(Playlist $playlist){
-//        $iplaylist = Playlist::find($this->id);
         $playlistSongs =  $playlist->songs;
-
-        return view('playlist', compact('playlist', 'playlistSongs'));
+return view('playlist', compact('playlist', 'playlistSongs'));
     }
 
     /**
@@ -85,4 +83,13 @@ class PlaylistController extends Controller
     {
         //
     }
+
+    public function deleteSongFromPlaylist () {
+        $songThatMustBeDeleted = Playlist::where("song_id", $song_id && "playlist_id",$playlist_id)->get();
+        return view('', compact(''));
+
+    }
 }
+
+
+

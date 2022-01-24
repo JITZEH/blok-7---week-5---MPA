@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -32,7 +31,8 @@ Route::get('/sessionqueue/{song}', [App\Http\Controllers\QueueController::class,
 Route::get('/clearqueue', [App\Http\Controllers\QueueController::class, 'clearQueue'])->name('clearqueue');
 Route::get('/deletequeueitem/{key}', [App\Http\Controllers\QueueController::class, 'deleteQueueItem'])->name('deletequeueitem');
 Route::get('/genre/{genre_id}', [App\Http\Controllers\GenreController::class, 'searchGenre'])->name('searchGenre');
-Route::get('/genre', [App\Http\Controllers\GenreController::class, 'index'])->name('genre');
+Route::get('/genres', [App\Http\Controllers\GenreController::class, 'index'])->name('genres');
+
 
 
 

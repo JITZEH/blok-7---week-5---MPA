@@ -26,7 +26,7 @@
     @endforeach
 </tbody>
     </table>
-    <a href="/song" style="font-size: 30px;">Add more songs to the queue<i class="fas fa-arrow-right"></i></a>
+    <a href="/songs" style="font-size: 30px;">Add more songs to the queue<i class="fas fa-arrow-right"></i></a>
 
 @endsection
 

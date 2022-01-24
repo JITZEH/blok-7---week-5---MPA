@@ -9,7 +9,8 @@ use \App\Models\Genre;
 class GenreController extends Controller
 {
     public function index() {
-        return view('genre');
+        $genres = Genre::all();
+        return view('genres', compact('genres'));
     }
 
     public function searchGenre ($genre_id) {

@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2921356e-57b0-400d-b07e-e6bb6a4152d5" name="Changes" comment="test" />
+    <list default="true" id="2921356e-57b0-400d-b07e-e6bb6a4152d5" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GenreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GenreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PlaylistController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PlaylistController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QueueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QueueController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Playlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Playlist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/template.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/queue.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/queue.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,7 +243,15 @@
       <workItem from="1639474603935" duration="1309000" />
       <workItem from="1639556071087" duration="1772000" />
       <workItem from="1639558013319" duration="4278000" />
-      <workItem from="1640074514530" duration="1247000" />
+      <workItem from="1640074514530" duration="5336000" />
+      <workItem from="1640160126890" duration="67000" />
+      <workItem from="1640160686383" duration="247000" />
+      <workItem from="1641993157277" duration="3693000" />
+      <workItem from="1642451770119" duration="2066000" />
+      <workItem from="1642601044010" duration="1048000" />
+      <workItem from="1642705542815" duration="2154000" />
+      <workItem from="1642752742242" duration="996000" />
+      <workItem from="1643020111962" duration="2849000" />
     </task>
     <task id="LOCAL-00001" summary="v0.2&#10;artist, playlists and songs start">
       <created>1633419821825</created>
